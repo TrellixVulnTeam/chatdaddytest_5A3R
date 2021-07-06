@@ -19,10 +19,14 @@ interface Tags {
 }
 
 interface Items {
-    item: Props
+    item: Props,
 }
 
 const ContactList: React.FC<Items> = (props) => {
+    const [selectContact, setSelectContent] = React.useState(false);
+    const handleContactSelection = (value: any) => {
+        setSelectContent(!selectContact);
+    }
     return(
         <Fragment>
             {props && props.item && <div className="contact-list">
@@ -46,9 +50,11 @@ const ContactList: React.FC<Items> = (props) => {
                                 <i className="fa fa-times"></i>
                             </div>
                         })}
-                        <div className="add-icon">
+                        { selectContact ? <div className="add-icon" onClick={()=> handleContactSelection(props.item.name)}>
+                            <i className="fas fa-minus-circle"></i>
+                        </div> : <div className="add-icon" onClick={()=> handleContactSelection(props.item.name)}>
                             <i className="fas fa-plus-circle"></i>
-                        </div>
+                        </div>}
                     </div>
                 </div>
             </div>}
