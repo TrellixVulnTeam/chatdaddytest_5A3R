@@ -1,0 +1,209 @@
+.sidebar {
+    padding: 20px 15px;
+    box-shadow: 1px 0 5px 1px #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+}
+
+.sidebar-header h5 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.sidebar-header h6 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #ACBACE;
+    text-transform: capitalize;
+}
+
+.include-tags h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.include-tags .tag-list {
+    padding: 10px;
+    height: 44px;
+    /* background-color: #F3F5F9; */
+}
+
+.include-tags .tag-list:first-child {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.include-tags .tag-list:nth-child(even) {
+    background-color: #F3F5F9;
+}
+
+.tag-name h6 {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+input.input-message {
+    border-radius: 10px;
+    background: #f3f4f9;
+    border-color: #f3f4f9;
+}
+
+.filter-btn button {
+    width: 100%;
+    background: #09A391;
+    border-color: #09A391;
+    border-radius: 8px;
+}
+
+.all-content-container {
+    width: 80%;
+}
+
+.all-content-container h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.add-icon i, .selected-icon i {
+    color: #09a391;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.search-input input {
+    background: #f3f4f9;
+    border-color: #f3f4f9;
+    border-radius: 50px;
+    padding-left: 45px;
+}
+
+.export-btn button {
+    background-color: #09a391;
+    border-color: #09a391;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 8px;
+} 
+
+.contact-info h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.contact-info p {
+    font-size: 12px;
+    color: #9ca6b9;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.contact-img img {
+    border-radius: 50px;
+    margin: 0 15px;
+}
+
+.contact-list-item {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.delete-icon {
+    display: none;
+}
+
+.delete-icon i {
+    color: #E52A34;
+    cursor: pointer;
+}
+
+.tag-list:hover, .include-tags .tag-list:nth-child(even):hover {
+    background-color: #DCECEE;
+}
+
+.tag-list:hover .delete-icon, .include-tags .tag-list:nth-child(even):hover .delete-icon {
+    display: block;
+}
+
+.tag-content {
+    background-color: #09a391;
+    border-radius: 40px;
+    padding: 2px 15px;
+    margin-right: 10px;
+}
+
+.tag-content span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tag-content i {
+    font-size: 12px;
+    margin-left: 8px;
+    color: #fff;
+}
+
+.search-input i.fa {
+    top: 11px;
+    left: 18px;
+    color: #ccc;
+}
+
+input[type=checkbox]{
+    margin-right: 10px;
+    opacity: 1;
+}
+
+input[type=checkbox]:before{
+    margin-top: -8px;
+    margin-left: -4px;
+    content: "\f00c";
+    opacity: 1;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: #cccccc;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+input[type=checkbox]:checked:before{
+    margin-top: -8px;
+    margin-left: -4px;
+    content: "\f00c";
+    opacity: 1;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: #09A391;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.form-check-label {
+    padding-left: 20px;
+}
+
+.filter-btn button.btn:hover, .export-btn button.btn:hover {
+    box-shadow: none;
+    background: transparent;
+    color: #09a391;
+    border-color: #09a391;
+}
